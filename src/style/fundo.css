@@ -1,0 +1,95 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(to top, #0f0f0f, transparent);
+    z-index: 10;
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+header #html-img, #css-img, #javascript-img, #bootstrap-img, #react-img, #mysql-img, #node-img {
+    width: auto;
+    z-index: .5;
+    height: 10%;
+}
+
+header #html-img {
+    top: 25%;
+    left: 43%;
+}
+
+header #css-img {
+    top: 30%;
+    left: 10%;
+}
+
+header #javascript-img {
+    top: 42%;
+    left: 30%;
+}
+
+header #bootstrap-img {
+    top: 57%;
+    left: 20%;
+}
+
+header #react-img {
+    top: 52%;
+    left: 50%;
+}
+
+header #mysql-img {
+    top: 25%;
+    left: 75%;
+    height: 13%;
+}
+
+header #node-img {
+    top: 45%;
+    left: 70%;
+}
+
+#nuvem {
+    box-shadow: 0 100px 100px 100px rgb(158, 158, 158);
+}
+
+#text {
+    position: absolute;
+    top: 9%;
+    color: #fff;
+    font-size: 2em;
+    z-index: 1;
+}
+
+#text2 {
+    position: absolute;
+    top: 15%;
+    color: #fff;
+    font-size: 1em;
+    z-index: 1;
+}
+
+#road {
+    z-index: 2;
+}

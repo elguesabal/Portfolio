@@ -1,0 +1,94 @@
+TIREI ISSO DO ARQUIVO swiper.css
+
+
+
+
+/* teste */
+.container-swiper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(100px, auto);
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+}
+
+.container-swiper .box-swiper {
+  background: #333;
+  padding: 20px;
+  display: grid;
+  font-size: 20px;
+  /* place-items: center;  COLOCAR UM BOTAO PARA ADICIONAR ESTE STYLE E PODER VIZUALIZAR MODO CELULAR */
+  text-align: justify;
+  color: #fff;
+  transition: 0.5s;
+}
+
+/* .info-swiper {
+  place-items: center;
+} */
+.card-info {
+  height: 552px;
+}
+
+.container-swiper .box-swiper:hover {
+  background: #e91e63;
+}
+
+.container-swiper .box-swiper img {
+  height: auto;
+  width: 30%;
+  position: relative;
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.container-swiper .container-icones {
+  width: 100%;
+}
+
+.container-swiper svg {
+  color: #000;
+  width: 50px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.container-swiper svg:hover {
+  color: #fff;
+  scale: 1.5;
+}
+
+.container-swiper .box-swiper:nth-child(1) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.container-swiper .box-swiper:nth-child(2) {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+/* .container-swiper .box-swiper:nth-child(3) {
+  grid-column: span 3;
+  grid-row: span 2;
+} */
+
+@media (max-width: 991px) {
+  .container-swiper {
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  grid-template-rows: minmax(auto, auto);
+  }
+
+  .container-swiper .box-swiper {
+      grid-column: unset !important;
+      grid-row: unset !important;
+  }
+}
+
+.iframe-site {
+  width: 100%;
+  height: 600px;
+}
