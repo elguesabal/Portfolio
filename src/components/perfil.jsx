@@ -2,7 +2,7 @@ function Perfil() {
 
     return (
         <div>
-            <div class="row featurette card-perfil">
+            <div class="row featurette card-perfil" id="card-perfil">
                 <div class="col-md-7 order-md-2">
                     <h2 class="featurette-heading fw-normal lh-1 tituloPerfil">Abaixo um pouco das minhas habilidades.</h2>
                     <hr />

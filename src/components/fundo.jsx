@@ -36,7 +36,7 @@ function Fundo() {
 
 
     return (
-        <header>
+        <header id="topo-site">
             <div class="botao_one">
                 <label for="check">
                     <i class="fas fa-bars"></i>
