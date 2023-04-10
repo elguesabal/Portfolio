@@ -25,7 +25,7 @@
 }
 
 .sidebar_menu .logo a {
-    color: #fff;
+    color: aqua;
     font-size: 25px;
     font-weight: 500;
     position: absolute;
@@ -46,19 +46,14 @@
     transition: 0.5s;
 }
 
-/* .sidebar_menu .menu i {
-    color: #fff;
-    font-size: 20px;
-    padding-right: 8px;
-} */
 .sidebar_menu .menu svg {
-    color: #fff;
+    color: aqua;
     width: 10%;
     margin-right: 4%;
 }
 
 .sidebar_menu .menu a {
-    color: #fff;
+    color: aqua;
     font-size: 20px;
     text-decoration: none;
 }
@@ -68,29 +63,6 @@
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
     background-color: rgba(100, 100, 100, 0.5);
 }
-
-/* .sidebar_menu .social_media {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
-    list-style: none;
-    cursor: pointer;
-}
-
-.sidebar_menu .social_media i {
-    text-decoration: none;
-    padding: 0 5px;
-    color: #fff;
-    opacity: 0.6;
-    font-size: 20px;
-}
-
-.sidebar_menu .social_media i:hover {
-    opacity: 1;
-    transition: all 0.2s linear;
-    transform: scale(1.01);
-} */
 
 #check {
     display: none;
