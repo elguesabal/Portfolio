@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
 
-
+                    app.get('/teste', (req, res) => res.send('so pra testar'))
 
 app.get('/', (req, res) => res.send('deu certo'))
 
