@@ -1,10 +1,11 @@
 # portfolio
 
 codigos de instalacao:
-react vite
-hook
-swiper
+npm install
 
 
 rodar app:
 npm run dev
+
+
+Link: https://jose-antonio.vercel.app/
