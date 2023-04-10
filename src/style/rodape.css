@@ -1,8 +1,0 @@
-.container-fluid footer span, ul .ms-3 a {
-    color: #fff;
-    transition: 1s;
-}
-
-.container-fluid footer ul .ms-3 a:hover {
-    color: aqua;
-}
