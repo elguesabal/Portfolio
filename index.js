@@ -40,15 +40,16 @@ app.post('/enviarEmail', (req, res) => {
     })
 
 
-    transport.sendMail({
-        from: `enviado de <${process.env.EMAIL}>`,
-        to: 'joseelguesabal@gmail.com',
-        subject: 'Nova mensagem da caixa do portfolio',
-        html: `<h1>Email de contato: <br/> ${email}</h1> <p>${mensagem}</p>`,
-        text: `Email de contato: ${email} ${mensagem}`
-    })
-    .then((resposta) => res.send(`email enviado para joseelguesabal@gmail.com`))
-    .catch((erro) => res.send(`o email para joseelguesabal@gmail.com nao foi enviado <br/> ${erro}`))
+
+    // transport.sendMail({
+    //     from: `enviado de <${process.env.EMAIL}>`,
+    //     to: 'joseelguesabal@gmail.com',
+    //     subject: 'Nova mensagem da caixa do portfolio',
+    //     html: `<h1>Email de contato: <br/> ${email}</h1> <p>${mensagem}</p>`,
+    //     text: `Email de contato: ${email} ${mensagem}`
+    // })
+    // .then((resposta) => res.send(`email enviado para joseelguesabal@gmail.com`))
+    // .catch((erro) => res.send(`o email para joseelguesabal@gmail.com nao foi enviado <br/> ${erro}`))
 
     // transport.sendMail({
     //     from: `enviado de <${process.env.EMAIL}>`,
@@ -59,6 +60,31 @@ app.post('/enviarEmail', (req, res) => {
     // })
     // .then((resposta) => res.send(`email enviado para ${email}`))
     // .catch((erro) => res.send(`o email para ${email} nao foi enviado`))    
+
+    const mensagens = [
+        {
+            from: `enviado de <${process.env.EMAIL}>`,
+            to: 'joseelguesabal@gmail.com',
+            subject: 'Nova mensagem da caixa do portfolio',
+            html: `<h1>Email de contato: <br/> ${email}</h1> <p>${mensagem}</p>`,
+            text: `Email de contato: ${email} ${mensagem}`
+        },
+        {
+            from: `enviado de <${process.env.EMAIL}>`,
+            to: email,
+            subject: 'Obrigado por me enviar uma mensagem!',
+            html: `<p>Agradeço o contato e em breve estarei respondendo em breve!</p>`,
+            text: `Agradeço o contato e em breve estarei respondendo!`
+        }
+    ]
+
+    for (let i = 0; i < mensagens.length; i++) {
+        transport.sendMail(mensagens[i])
+        .then((resposta) => console.log(`email ${i + 1} enviado`))
+        .catch((erro) => console.log(`email ${i + 1} nao foi enviado`))
+    }
+
+    res.send('mensagem enviada')
 })
 
 
