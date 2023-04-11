@@ -11,6 +11,7 @@ import './style/rodape.css'
 import './style/badminton.css'
 import './style/mensagem.css'
 import './style/perfil.css'
+import './style/telaLoad.css'
 
 
 
