@@ -39,6 +39,31 @@ app.post('/enviarEmail', (req, res) => {
         }
     })
 
+    const mensagens = [
+        {
+            from: `enviado de <${process.env.EMAIL}>`,
+            to: 'joseelguesabal@gmail.com',
+            subject: 'Nova mensagem da caixa do portfolio',
+            html: `<h1>Email de contato: <br/> ${email}</h1> <p>${mensagem}</p>`,
+            text: `Email de contato: ${email} ${mensagem}`
+        },
+        {
+            from: `enviado de <${process.env.EMAIL}>`,
+            to: email,
+            subject: 'Obrigado por me enviar uma mensagem!',
+            html: `<p>Agradeço o contato e em breve estarei respondendo em breve!</p>`,
+            text: `Agradeço o contato e em breve estarei respondendo!`
+        }
+    ]
+
+    transport.sendMail(mensagens[0])
+    .then((resposta) => {
+        transport.sendMail(mensagens[1])
+        .then((resposta) => res.send(`mensagem enviada`))
+        .catch((erro) => res.send(`ocorreu um erro: 2`))  
+    })
+    .catch((erro) => res.send(`ocorreu um erro: 1`))
+
 
 
     // transport.sendMail({
@@ -61,30 +86,66 @@ app.post('/enviarEmail', (req, res) => {
     // .then((resposta) => res.send(`email enviado para ${email}`))
     // .catch((erro) => res.send(`o email para ${email} nao foi enviado`))    
 
-    const mensagens = [
-        {
-            from: `enviado de <${process.env.EMAIL}>`,
-            to: 'joseelguesabal@gmail.com',
-            subject: 'Nova mensagem da caixa do portfolio',
-            html: `<h1>Email de contato: <br/> ${email}</h1> <p>${mensagem}</p>`,
-            text: `Email de contato: ${email} ${mensagem}`
-        },
-        {
-            from: `enviado de <${process.env.EMAIL}>`,
-            to: email,
-            subject: 'Obrigado por me enviar uma mensagem!',
-            html: `<p>Agradeço o contato e em breve estarei respondendo em breve!</p>`,
-            text: `Agradeço o contato e em breve estarei respondendo!`
-        }
-    ]
 
-    for (let i = 0; i < mensagens.length; i++) {
-        transport.sendMail(mensagens[i])
-        .then((resposta) => console.log(`email ${i + 1} enviado`))
-        .catch((erro) => console.log(`email ${i + 1} nao foi enviado`))
-    }
+    
+    // const mensagens = [
+    //     {
+    //         from: `enviado de <${process.env.EMAIL}>`,
+    //         to: 'joseelguesabal@gmail.com',
+    //         subject: 'Nova mensagem da caixa do portfolio',
+    //         html: `<h1>Email de contato: <br/> ${email}</h1> <p>${mensagem}</p>`,
+    //         text: `Email de contato: ${email} ${mensagem}`
+    //     },
+    //     {
+    //         from: `enviado de <${process.env.EMAIL}>`,
+    //         to: email,
+    //         subject: 'Obrigado por me enviar uma mensagem!',
+    //         html: `<p>Agradeço o contato e em breve estarei respondendo em breve!</p>`,
+    //         text: `Agradeço o contato e em breve estarei respondendo!`
+    //     }
+    // ]
 
-    res.send('mensagem enviada')
+    // for (let i = 0; i < mensagens.length; i++) {
+    //     transport.sendMail(mensagens[i])
+    //     .then((resposta) => console.log(`email ${i + 1} enviado`))
+    //     .catch((erro) => res.send(`ouve um erro: ${i + 1}`))
+    // }
+
+
+
+    // function emailJose() {
+    //     transport.sendMail({
+    //         from: `enviado de <${process.env.EMAIL}>`,
+    //         to: 'joseelguesabal@gmail.com',
+    //         subject: 'Nova mensagem da caixa do portfolio',
+    //         html: `<h1>Email de contato: <br/> ${email}</h1> <p>${mensagem}</p>`,
+    //         text: `Email de contato: ${email} ${mensagem}`
+    //     })
+    //     .then((resposta) => console.log('email 1 enviado'))
+    //     .catch((erro) => console.log('email 1 nao foi enviado'))
+        
+    // }
+
+    // function emailCliente() {
+    //     transport.sendMail({
+    //         from: `enviado de <${process.env.EMAIL}>`,
+    //         to: email,
+    //         subject: 'Obrigado por me enviar uma mensagem!',
+    //         html: `<p>Agradeço o contato e em breve estarei respondendo em breve!</p>`,
+    //         text: `Agradeço o contato e em breve estarei respondendo!`
+    //     })
+    //     .then((resposta) =>  console.log('email 2 enviado'))
+    //     .catch((erro) => console.log('email 2 nao foi enviado'))
+       
+    // }
+
+    // async function enviarEmail() {
+    //     emailJose()
+    //     await emailCliente()
+
+    //     res.send('os 2 emais foram enviados')
+    // }
+    // enviarEmail()
 })
 
 
