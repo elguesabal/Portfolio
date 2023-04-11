@@ -45,22 +45,19 @@ app.post('/enviarEmail', (req, res) => {
         html: `<h1>Email de contato: <br/> ${email}</h1> <p>${mensagem}</p>`,
         text: `Email de contato: ${email} ${mensagem}`
     })
-    .then((resposta) => res.send(resposta))
-    .catch((err) => res.send(err))
+    .then((resposta) => res.send(`email enviado para joseelguesabal@gmail.com`))
+    .catch((erro) => res.send(`o email para joseelguesabal@gmail.com nao foi enviado`))
 
 
-    // transport.sendMail({
-    //     from: `enviado de <${process.env.EMAIL}>`,
-    //     to: email,
-    //     subject: 'Obrigado por me enviar uma mensagem!',
-    //     html: `<p>Agradeço o contato e em breve estarei respondendo!</p>`,
-    //     text: `Agradeço o contato e em breve estarei respondendo!`
-    // })
-    // .then(() => console.log('email respondido'))
-    // .catch((err) => console.log('deu esse erro ai', err))
-
-
-    
+    transport.sendMail({
+        from: `enviado de <${process.env.EMAIL}>`,
+        to: email,
+        subject: 'Obrigado por me enviar uma mensagem!',
+        html: `<p>Agradeço o contato e em breve estarei respondendo em breve!</p>`,
+        text: `Agradeço o contato e em breve estarei respondendo!`
+    })
+    .then((resposta) => res.send(`email enviado para ${email}`))
+    .catch((erro) => res.send(`o email para ${email} nao foi enviado`))    
 })
 
 
