@@ -12,11 +12,12 @@ import './style/badminton.css'
 import './style/mensagem.css'
 import './style/perfil.css'
 import './style/telaLoad.css'
+import './style/mensagem enviada.css'
 
 
 
 import PaginaInicial from './paginas/pagina inicial'
-import PaginaResilia from './paginas/pagina resilia'
+import MensagemEnviada from './paginas/mensagem enviada'
 
 
 // TESTES
@@ -33,10 +34,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<PaginaInicial />} />
-        <Route path="/curso" element={<PaginaResilia />} />
+        <Route path="/mensagemenviada" element={<MensagemEnviada />} />
 
 
-        <Route path="/teste" element={<Fundo />} />
+        <Route path="/teste" element={<MensagemEnviada />} />
       </Routes>
     </BrowserRouter>
   )
