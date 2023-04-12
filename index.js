@@ -59,7 +59,7 @@ app.post('/enviarEmail', (req, res) => {
     transport.sendMail(mensagens[0])
     .then((resposta) => {
         transport.sendMail(mensagens[1])
-        .then((resposta) => res.send(`mensagem enviada`))
+        .then((resposta) => res.redirect(`https://jose-antonio.vercel.app/mensagemenviada`))
         .catch((erro) => res.send(`ocorreu um erro: 2`))  
     })
     .catch((erro) => res.send(`ocorreu um erro: 1`))
