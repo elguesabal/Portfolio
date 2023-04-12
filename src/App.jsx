@@ -13,6 +13,7 @@ import './style/mensagem.css'
 import './style/perfil.css'
 import './style/telaLoad.css'
 import './style/mensagem enviada.css'
+import './style/scroll.css'
 
 
 
