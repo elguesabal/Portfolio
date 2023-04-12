@@ -14,14 +14,12 @@
     position: relative;
     width: 200px;
     height: 200px;
-    /* border: 2px solid red; */
 }
 
 .load1, .load2 {
     position: absolute;
     width: 50px;
     height: 50px;
-    color: #e0f035;
     border-radius: 100%;
 }
 
@@ -39,27 +37,23 @@
 
 @keyframes load1 {
     0% {
-        /* background-color: #35f039; */
+        background-color: aqua;
         left: 0px;
         top: 0px;
     }
     25% {
-        /* background-color: #ff9500; */
         left: 150px;
         top: 0px;
     }
     50% {
-        /* background-color: #b527cf; */
         left: 150px;
         top: 150px;
     }
     75% {
-        /* background-color: #d7d7d7; */
         left: 0px;
         top: 150px;
     }
     100% {
-        /* background-color: #35f039; */
         left: 0px;
         top: 0px;
     }
@@ -67,27 +61,23 @@
 
 @keyframes load2 {
     0% {
-        background-color: #35f039;
+        background-color: aqua;
         left: 150px;
         top: 150px;
     }
     25% {
-        background-color: #ff9500;
         left: 0px;
         top: 150px;
     }
     50% {
-        background-color: #b527cf;
         left: 0px;
         top: 0px;
     }
     75% {
-        background-color: #d7d7d7;
         left: 150px;
         top: 0px;
     }
     100% {
-        background-color: #35f039;
         left: 150px;
         top: 150px;
     }
