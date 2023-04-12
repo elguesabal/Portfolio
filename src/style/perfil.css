@@ -18,3 +18,37 @@
 .tituloPerfil {
     color: rgb(192, 192, 192);
 }
+
+.card-perfil .table-borderless tbody tr {
+    text-align: center;
+}
+
+table {
+    background-color: #1a1a1a;
+}
+
+table thead {
+    border: 10px solid #0f0f0f;
+}
+
+table tr td:hover {
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+table tr td:hover {
+    background-color: #272727;
+}
+
+@media (max-width: 991px) {
+    .card-perfil .order-md-2 .tituloPerfil {
+        width: 100vw;
+        font-size: 20pt;
+        text-align: center;
+    }
+
+    .divTable {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+}
