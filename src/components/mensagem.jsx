@@ -1,5 +1,9 @@
 function Mensagem() {
 
+    function telaload() {
+        document.getElementById('telaLoad').style.display = 'flex'
+    }
+
     return (
         <div class="container col-xl-10 col-xxl-8 px-4 py-5" id="caixaMensagem">
             <div class="row align-items-center g-lg-5 py-5">
@@ -28,7 +32,7 @@ function Mensagem() {
                             <label>Mensagem</label>
                             <textarea for="mensagem" name="mensagem" class="form-control formDeMensagem" id="floatingPassword" placeholder="Deixe sua mensagem" rows="5"></textarea>
                         </div>
-                        <button class="w-100 btn btn-lg btn-outline-light" type="submit">Enviar</button>
+                        <button class="w-100 btn btn-lg btn-outline-light" type="submit" onClick={() => telaload()}>Enviar</button>
                     </form>
                 </div>
             </div>
