@@ -7,7 +7,7 @@ function TelaLoad() {
     return (
         <div id="telaLoad">
             <div class="load">
-                <ion-icon class="load1" name="logo-javascript"></ion-icon>
+                <div className="load1"></div>
                 <div class="load2"></div>
             </div>
         </div>
