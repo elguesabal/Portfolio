@@ -15,8 +15,9 @@
 }
 
 .container .text-lg-start a svg:hover {
-    scale: 1.5;
     color: aqua;
+    margin-top: 10px;
+    box-shadow: 0 0 100px 1px white;
 }
 
 form div label {
@@ -29,6 +30,7 @@ form div label {
 
 .formDeEmail:hover {
     background-color: rgb(180, 255, 255);
+    box-shadow: 0 0 1000px 1px rgba(255, 255, 255, 0.4);
 }
 
 .formDeMensagem {
@@ -37,4 +39,5 @@ form div label {
 
 .formDeMensagem:hover {
     background-color: rgb(180, 255, 255);
+    box-shadow: 0 0 1000px 1px rgba(255, 255, 255, 0.4);
 }
