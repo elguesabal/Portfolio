@@ -17,7 +17,7 @@ function PaginaInicial() {
             <Perfil />
             <SlideSwiper />
             <Badminton />
-            <Mensagem /><a href="/mensagemenviada">testandoo</a>
+            <Mensagem />
             <Rodape />
 
         </div>
