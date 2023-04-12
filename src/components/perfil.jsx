@@ -6,30 +6,33 @@ function Perfil() {
                 <div class="col-md-7 order-md-2">
                     <h2 class="featurette-heading fw-normal lh-1 tituloPerfil">Abaixo um pouco das minhas habilidades.</h2>
                     <hr />
-                    <table class="table table-borderless">
-                        <thead>
-                            <tr>
-                                <th scope="col" colspan="2">Habilidades</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>HTML5</td>
-                                <td>Bootstrap</td>
-                                <td>Node.js</td>
-                            </tr>
-                            <tr>
-                                <td>CSS3</td>
-                                <td>React</td>
-                                <td>Express</td>
-                            </tr>
-                            <tr>
-                                <td>JavaScript</td>
-                                <td>MySQL</td>
-                                <td>GitHub</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="divTable">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="3">Habilidades</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HTML5</td>
+                                    <td>Bootstrap</td>
+                                    <td>Node.js</td>
+                                </tr>
+                                <tr>
+                                    <td>CSS3</td>
+                                    <td>React</td>
+                                    <td>Express</td>
+                                </tr>
+                                <tr>
+                                    <td>JavaScript</td>
+                                    <td>MySQL</td>
+                                    <td>GitHub</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                 </div>
                 <div class="col-md-5 order-md-1">
                     <div class="container marketing">
