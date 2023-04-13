@@ -19,6 +19,7 @@ import './style/scroll.css'
 
 import PaginaInicial from './paginas/pagina inicial'
 import MensagemEnviada from './paginas/mensagem enviada'
+import Erro from './paginas/erro mensagem'
 
 
 // TESTES
@@ -36,6 +37,7 @@ function App() {
       <Routes>
         <Route path="/" element={<PaginaInicial />} />
         <Route path="/mensagemenviada" element={<MensagemEnviada />} />
+        <Route path="/erro" element={<Erro />} />
 
 
         <Route path="/teste" element={<MensagemEnviada />} />
