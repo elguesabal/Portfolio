@@ -14,6 +14,7 @@ import './style/perfil.css'
 import './style/telaLoad.css'
 import './style/mensagem enviada.css'
 import './style/scroll.css'
+import './style/back to up.css'
 
 
 
