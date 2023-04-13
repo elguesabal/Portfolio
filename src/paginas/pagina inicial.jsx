@@ -6,12 +6,14 @@ import Badminton from "../components/card de cada site/badminton"
 import Mensagem from "../components/mensagem"
 import Perfil from "../components/perfil"
 import TelaLoad from "../components/telaLoad"
+import BackToUp from "../components/back to up"
 
 function PaginaInicial() {
 
     return(
         <div>
             <TelaLoad />
+            <BackToUp />
             <Fundo />
             <Cabecalho />
             <Perfil />
@@ -19,7 +21,6 @@ function PaginaInicial() {
             <Badminton />
             <Mensagem />
             <Rodape />
-
         </div>
     )
 }
