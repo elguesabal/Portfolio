@@ -41,17 +41,23 @@ app.post('/enviarEmail', (req, res) => {
 
 
     const emailCliente = 
-    `<style>
-        .email {
-            width: 100%;
-            height: 300px;
-            background-color: red;
-        }
-    </style>
+    `
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-    <div class="email">
-        teste para ver o paranaue
-    </div>`
+    <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+            <h2>Obrigado por mandar mensagem</h2>
+            <p>Agradeço o contato e em breve estarei respondendo em breve! Também sinta-se à vontade para mandar
+                mensagens em outras plataformas como LinkedIn, e-mail e WhatsApp.</p>
+            <a href="https://jose-antonio.vercel.app/" class="btn btn-outline-light" target="_blank">Portfolio</a>
+            <a href="https://www.canva.com/design/DAFTzR3VmGY/qLmFQigCW6Y8hRZ8Ly7gew/view?utm_content=DAFTzR3VmGY&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel"
+                class="btn btn-outline-light" target="_blank">Currículo</a>
+            <a href="https://www.linkedin.com/in/jos%C3%A9-antonio-b14160240/" class="btn btn-outline-light"
+                target="_blank">LinkedIn</a>
+            <a href="https://wa.me/qr/NO4ELMDAGM2BI1" class="btn btn-outline-light" target="_blank">WhatsApp</a>
+        </div>
+    </div>
+    `
 
     const mensagens = [
         {
