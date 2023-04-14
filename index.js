@@ -39,6 +39,20 @@ app.post('/enviarEmail', (req, res) => {
         }
     })
 
+
+    const emailCliente = 
+    `<style>
+        .email {
+            width: 100%;
+            height: 300px;
+            background-color: red;
+        }
+    </style>
+
+    <div class="email">
+        teste para ver o paranaue
+    </div>`
+
     const mensagens = [
         {
             from: `enviado de <${process.env.EMAIL}>`,
@@ -51,7 +65,7 @@ app.post('/enviarEmail', (req, res) => {
             from: `enviado de <${process.env.EMAIL}>`,
             to: email,
             subject: 'Obrigado por me enviar uma mensagem!',
-            html: `<p>Agradeço o contato e em breve estarei respondendo em breve!</p>`,
+            html: emailCliente,
             text: `Agradeço o contato e em breve estarei respondendo!`
         }
     ]
