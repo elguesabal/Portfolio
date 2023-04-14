@@ -42,21 +42,70 @@ app.post('/enviarEmail', (req, res) => {
 
     const emailCliente = 
     `
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        .email {
+            display: flex;
+            justify-content: center;
+        }
 
-    <div class="col-md-6">
-        <div class="h-100 p-5 text-bg-dark rounded-3">
+        .container {
+            width: 80%;
+            background-color: #0f0f0f;
+            border-radius: 10px;
+        }
+
+        .content {
+            width: 90%;
+            height: 90%;
+            margin: auto;
+        }
+
+        .container .content h2 {
+            padding-top: 15px;
+            color: rgb(192, 192, 192);
+        }
+
+        .container .content p {
+            color: aliceblue;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            background-color: white;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            transition: 1s;
+        }
+
+        .btn:hover {
+            background-color: rgb(180, 255, 255);
+            box-shadow: 0 0 1000px 1px rgba(255, 255, 255, 1);
+            margin-top: 0;
+        }
+    </style>
+
+<div class="email">
+    <div class="container">
+        <div class="content">
             <h2>Obrigado por mandar mensagem</h2>
-            <p>Agradeço o contato e em breve estarei respondendo em breve! Também sinta-se à vontade para mandar
-                mensagens em outras plataformas como LinkedIn, e-mail e WhatsApp.</p>
-            <a href="https://jose-antonio.vercel.app/" class="btn btn-outline-light" target="_blank">Portfolio</a>
-            <a href="https://www.canva.com/design/DAFTzR3VmGY/qLmFQigCW6Y8hRZ8Ly7gew/view?utm_content=DAFTzR3VmGY&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel"
-                class="btn btn-outline-light" target="_blank">Currículo</a>
-            <a href="https://www.linkedin.com/in/jos%C3%A9-antonio-b14160240/" class="btn btn-outline-light"
-                target="_blank">LinkedIn</a>
-            <a href="https://wa.me/qr/NO4ELMDAGM2BI1" class="btn btn-outline-light" target="_blank">WhatsApp</a>
+            <p>Agradeço o contato e em breve estarei respondendo em breve! Também sinta-se à vontade para mandar mensagens em outras plataformas como LinkedIn, e-mail e WhatsApp.</p>
+            <div class="links">
+                <a href="https://jose-antonio.vercel.app/" class="btn" target="_blank">Portfolio</a>
+                <a href="https://www.canva.com/design/DAFTzR3VmGY/qLmFQigCW6Y8hRZ8Ly7gew/view?utm_content=DAFTzR3VmGY&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel" class="btn btn-outline-light" target="_blank">Currículo</a>
+                <a href="https://www.linkedin.com/in/jos%C3%A9-antonio-b14160240/" class="btn" target="_blank">LinkedIn</a>
+                <a href="https://wa.me/qr/NO4ELMDAGM2BI1" class="btn" target="_blank">WhatsApp</a>    
+            </div>
         </div>
     </div>
+</div>
     `
 
     const mensagens = [
