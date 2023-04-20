@@ -25,10 +25,6 @@
 <br>
 <br>
 <br>
-<img align="center" width="40%" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=MaikolSantos&layout=compact&langs_count=7&theme=github_dark"/>
-<br>
-<br>
-<br>
 <p>Link do portfolio: <a href="https:https://jose-antonio.vercel.app/" target="_blank">https://jose-antonio.vercel.app/</a></p>
 
 <img align="bottom" width="100%" src="https://github.com/MaikolSantos/image/blob/main/wave.svg"/>
