@@ -210,7 +210,7 @@ app.post('/enviarEmail', (req, res) => {
 
     const mensagens = [
         {
-            from: `enviado de <${process.env.EMAIL}>`,
+            from: `José Antonio`,
             to: 'joseelguesabal@gmail.com',
             subject: 'Nova mensagem da caixa do portfolio',
             html: `<h1>Email de contato: <br/> ${email}</h1> <p>${mensagem}</p>`,
