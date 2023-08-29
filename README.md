@@ -28,4 +28,4 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 
 ## 🔗 Links
 
-Link: https://servidor-portfolio.vercel.app/
+Link: https://servidor-portfolio.vercel.app
