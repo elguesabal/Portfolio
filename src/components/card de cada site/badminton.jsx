@@ -8,6 +8,7 @@ function Badminton() {
                     <p class="lead">Logo no meu segundo mês do curso por, iniciativa própria, adaptei um treino de badminto (esporte que pratico). Dois meses após criei uma nova branch, chamada "react" e repostei com algumas novas melhorias.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
                         <a href="https://badbons.vercel.app/" target="_blank"  class="btn btn-outline-secondary btn-lg px-4">Visualizar</a>
+                        <a href="https://badminton-nova-logica.vercel.app/?config=off" target="_blank"  class="btn btn-outline-secondary btn-lg px-4">Versão mais atualizada</a>
                         <a href="https://github.com/elguesabal/Badminton" target="_blank"  class="btn btn-outline-secondary btn-lg px-4">GitHub</a>
                     </div>
                 </div>

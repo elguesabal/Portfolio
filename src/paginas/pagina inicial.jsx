@@ -8,6 +8,7 @@ import Mensagem from "../components/mensagem"
 import Perfil from "../components/perfil"
 import TelaLoad from "../components/telaLoad"
 import BackToUp from "../components/back to up"
+import Rio42 from "../components/card de cada site/42rio"
 
 function PaginaInicial() {
 
@@ -21,6 +22,7 @@ function PaginaInicial() {
             <SlideSwiper />
             <Badminton />
             <Ctrlc />
+            <Rio42 />
             <Mensagem />
             <Rodape />
         </div>

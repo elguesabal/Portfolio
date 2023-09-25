@@ -7,7 +7,7 @@ function TelaLoad() {
     return (
         <div id="telaLoad">
             <div class="load">
-                <div className="load1"></div>
+                <div class="load1"></div>
                 <div class="load2"></div>
             </div>
         </div>
