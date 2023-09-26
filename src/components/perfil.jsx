@@ -16,17 +16,17 @@ function Perfil() {
                             <tbody>
                                 <tr>
                                     <td>HTML5</td>
-                                    <td>Bootstrap</td>
-                                    <td>Node.js</td>
-                                </tr>
-                                <tr>
                                     <td>CSS3</td>
-                                    <td>React</td>
-                                    <td>Express</td>
+                                    <td>JavaScript</td>
                                 </tr>
                                 <tr>
-                                    <td>JavaScript</td>
+                                    <td>React</td>
+                                    <td>Node.js</td>
                                     <td>MySQL</td>
+                                </tr>
+                                <tr>
+                                    <td>MongoDB</td>
+                                    <td>C</td>
                                     <td>GitHub</td>
                                 </tr>
                             </tbody>
