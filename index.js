@@ -231,7 +231,7 @@ app.post('/enviarEmail', (req, res) => {
         transport.sendMail(mensagens[1])
         .then((resposta) => res.redirect(`https://jose-antonio.vercel.app/mensagemenviada`))
         .catch((erro) => res.redirect(`https://jose-antonio.vercel.app/erro`))  
-      }, 10000);
+      }, 5000);
     })
     .catch((erro) => res.send(`ocorreu um erro: 1`))
     
