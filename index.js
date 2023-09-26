@@ -210,7 +210,7 @@ app.post('/enviarEmail', (req, res) => {
 
     const mensagens = [
         {
-            from: `José Antonio`,
+            from: `enviado de <${process.env.EMAIL}>`,
             to: 'joseelguesabal@gmail.com',
             subject: 'Nova mensagem da caixa do portfolio',
             html: `<h1>Email de contato: <br/> ${email}</h1> <p>${mensagem}</p>`,
@@ -227,9 +227,11 @@ app.post('/enviarEmail', (req, res) => {
 
     transport.sendMail(mensagens[0])
     .then((resposta) => {
+      setTimeout(() => {
         transport.sendMail(mensagens[1])
         .then((resposta) => res.redirect(`https://jose-antonio.vercel.app/mensagemenviada`))
         .catch((erro) => res.redirect(`https://jose-antonio.vercel.app/erro`))  
+      }, 10000);
     })
     .catch((erro) => res.send(`ocorreu um erro: 1`))
     
